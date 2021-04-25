@@ -4,12 +4,8 @@ from copy import deepcopy
 
 class Circles:
     """ Circles Class:
-        Tracks radii and centers of circles implied by Fourier decomposition of given FourierTransform object
-        
-        :param FT: FourierTransform objet gives by the second class (fourierApprox)
-        :type num_circles: Default number of circles to keep track of
-        :type t_init:int, Initial time state of object (default value is 0)
-        :type origin: Center of the first circle (0,0)
+        Tracks radii and centers of circles implied by 
+        Fourier decomposition of given FourierTransform object
     """
     def __init__(self,
                  FT, # FourierTransform object
@@ -90,7 +86,7 @@ class Circles:
         return(self.circle_positions(transpose=transpose))
     
     def step(self, dt=1):
-        """Defines the trajectory to follow"""
+        """Describing circular path"""
         # dt = how many times to increment t_vals array for each step
         self.steps_elapsed += 1
         next_index = dt*self.steps_elapsed 
