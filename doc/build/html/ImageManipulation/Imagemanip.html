@@ -32,6 +32,8 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -201,52 +203,52 @@ These are the steps of the algorithm:</p>
 <img alt="../_images/spline_curves.png" src="../_images/spline_curves.png" />
 <dl class="py class">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">FourierDrawing.ImageManipulation.Imgmanip.</span></code><code class="sig-name descname"><span class="pre">Imagemanip</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">FourierDrawing.ImageManipulation.Imgmanip.</code><code class="sig-name descname">Imagemanip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">url</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.black_and_white">
-<code class="sig-name descname"><span class="pre">black_and_white</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.black_and_white" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">black_and_white</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.black_and_white" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert image to black and white</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.contours_search">
-<code class="sig-name descname"><span class="pre">contours_search</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.contours_search" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">contours_search</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.contours_search" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the image tour using the nearest neighbor heuristic</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.convert_binary">
-<code class="sig-name descname"><span class="pre">convert_binary</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.convert_binary" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">convert_binary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scale</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">thresh_val</span><span class="o">=</span><span class="default_value">200</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.convert_binary" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert to binary image with 0 or 255 array values</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.distance_matrix">
-<code class="sig-name descname"><span class="pre">distance_matrix</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.distance_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">distance_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.distance_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get non-zero pixel coordiantes than calcualte distance between each pair of them</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.get_splines">
-<code class="sig-name descname"><span class="pre">get_splines</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.get_splines" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_splines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">degree</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.get_splines" title="Permalink to this definition">¶</a></dt>
 <dd><p>Smooth the curves tour angles</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show">
-<code class="sig-name descname"><span class="pre">show</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show" title="Permalink to this definition">¶</a></dt>
 <dd><p>Show raw image and his informations</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show_black_and_white">
-<code class="sig-name descname"><span class="pre">show_black_and_white</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show_black_and_white" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">show_black_and_white</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.show_black_and_white" title="Permalink to this definition">¶</a></dt>
 <dd><p>Show black and white image</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.single_color">
-<code class="sig-name descname"><span class="pre">single_color</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.single_color" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">single_color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FourierDrawing.ImageManipulation.Imgmanip.Imagemanip.single_color" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert image to single color</p>
 </dd></dl>
 

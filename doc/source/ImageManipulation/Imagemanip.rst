@@ -8,9 +8,9 @@ The objectives of this first part is to create a Python class which allows you t
 
 *   Extract the drawing coordinates, then calculate the Euclidean distance between these points.
 
-*   Search the optimal path that connects the drawing points, by using the nearest neighbor method.
+*   Get the optimal path that connects the drawing points, by using the nearest neighbor method.
 
-*   Convert tours into parametric spline curves.
+*   Convert path into parametric spline curves.
 
 
 
@@ -39,7 +39,7 @@ These are the steps of the algorithm:
 *   Set v as the current point u. Mark v as visited.
 *   If all the points in the domain are visited, then terminate. Else, go to step 3.
 
-In this class, the set of points is presented by the points of non-zero pixels. The optimization criterion is the Euclidean distance between the non-zero pixels.
+In this class, the set of points is presented by non-zero pixels points. The optimization criterion is the Euclidean distance between the non-zero pixels.
 
 Reference:
 

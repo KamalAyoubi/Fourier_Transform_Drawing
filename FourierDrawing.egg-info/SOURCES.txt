@@ -1,0 +1,16 @@
+README.md
+setup.py
+FourierDrawing/__init__.py
+FourierDrawing.egg-info/PKG-INFO
+FourierDrawing.egg-info/SOURCES.txt
+FourierDrawing.egg-info/dependency_links.txt
+FourierDrawing.egg-info/not-zip-safe
+FourierDrawing.egg-info/top_level.txt
+FourierDrawing/Animate_FT/Animate.py
+FourierDrawing/Animate_FT/__init__.py
+FourierDrawing/Circles_radii_center/ComplexCircles.py
+FourierDrawing/Circles_radii_center/__init__.py
+FourierDrawing/FourierApproximation/Class_fourierApproximation.py
+FourierDrawing/FourierApproximation/__init__.py
+FourierDrawing/ImageManipulation/Imgmanip.py
+FourierDrawing/ImageManipulation/__init__.py
