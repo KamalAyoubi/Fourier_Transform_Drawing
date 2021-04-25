@@ -7,7 +7,7 @@ from FourierDrawing. import Circles
 from FourierDrawing.Animate_FT import Animate
 #%%
 # Import raw image
-url = 'https://raw.githubusercontent.com/KamalAyoubi/Fourier_Transform_Drawing/main/Images/rabbit.jpg'
+url = 'https://raw.githubusercontent.com/KamalAyoubi/Fourier_Transform_Drawing/main/Images/rabbit_raw.jpg'
 #img = Imagemanip(url)
 img = FD.Imagemanip(url)
 #%%
