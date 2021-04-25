@@ -17,7 +17,7 @@ from FourierApproximation.Class_fourierApproximation import FourierApprox
 from Circles_radii_center.ComplexCircles import Circles
 
 # %%
-url = 'https://reussiralecole.fr/wp-content/uploads/2020/09/coloriage-pokemon-01.jpg'
+url = 'https://raw.githubusercontent.com/KamalAyoubi/Fourier_Transform_Drawing/main/Images/rabbit.jpg'
 img = Imagemanip(url)
 img.single_color()
 img.convert_binary(scale=2, thresh_val=200)
@@ -232,7 +232,7 @@ def animate(i):
 
     
     return([])
-
+#%%
 ani = animation.FuncAnimation(fig, animate, frames=num_frames,
                               interval=interval, blit=True, init_func=init)
                               
